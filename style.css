@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Quicksand', sans-serif;;
+}
+
+#num{
+    display: flex;
+    border: solid 1px rgb(218, 217, 217);
+    height: 40px;
+    
+}
+
+#num span{
+
+font-size: 18px;
+margin-top: 10px;
+}
+
+#phone{
+    margin-left: 400px;
+}
+#email{
+    margin-left: 20px;
+    margin-right: 500px;
+}
+
+#num svg {
+    margin-left: 25px;
+    margin-top: 10px;
+    fill: #0d0cb5;
+}
+
+.co{
+color:#0d0cb5 ;
+}
+
+#titulo{
+    height: 100px;
+    display: flex;
+}
+#titulo h1{ 
+margin-top: 25px;
+margin-left: 400px;
+}
+
+#h{
+    color:#0d0cb5 ;
+}
+
+#titulo ul{
+    display: flex;
+    list-style: none;
+    margin-left: 445px;
+    margin-top: 40px;
+}
+#titulo li{
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+#titulo li:hover{
+    color: #0d0cb5;
+}
+
+#dropmenu{
+    position: relative;
+}
+#droplist{
+    position:absolute;
+    list-style: none;
+    background-color: white;
+    color: gray;
+    width: 300%;
+    justify-content: space-around;
+    height: 25vh;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+#dropmenu:hover{
+    color:#0d0cb5
+}
+
+#droplist li {
+    text-align: center;
+}
+#droplist li:hover{
+    background-color: wheat;
+    border: dashed 1px lightgray;
+}
+
+#dropmenu:hover #droplist{
+opacity: 1;
+z-index: 10;
+}
